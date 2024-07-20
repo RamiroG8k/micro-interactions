@@ -26,6 +26,12 @@ body {
     hsl(var(--color-accent));
 }
 
+@layer components {
+  .center {
+    @apply flex flex-col items-center justify-center;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
