@@ -39,12 +39,12 @@ export default function YouTubeLike() {
 
     return (
         <button
-            className="bg-zinc-800 rounded-full text-white center flex-row gap-2 w-28 py-1"
+            className="bg-zinc-800 rounded-full text-white flex center flex-row w-28 transition-all duration-300 hover:scale-105"
             onClick={handleClick}
             onMouseEnter={() => handleHover(true)}
             onMouseLeave={() => handleHover(false)}
         >
-            <RiveComponent className="size-10 -ml-2" />
+            <RiveComponent is="svg" className="size-12 -translate-x-2 pointer-events-none" />
 
             <span className="text-xl font-medium">{8 + (liked ? 1 : 0)}</span>
         </button>
